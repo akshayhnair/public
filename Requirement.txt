@@ -14,3 +14,19 @@ tensorboard
 tensorflow
 tqdm
 torch
+
+
+import importlib
+
+libraries = [
+    "xlrd", "h5py", "keras", "librosa", "matplotlib", "numba", "protobuf",
+    "pytest", "yaml", "sklearn", "scipy", "streamlit", "tensorboard",
+    "tensorflow", "tqdm", "torch"
+]
+
+for lib in libraries:
+    try:
+        importlib.import_module(lib)
+        print(f"{lib} is installed ✅")
+    except ImportError:
+        print(f"{lib} is NOT installed ❌")
