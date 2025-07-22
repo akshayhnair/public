@@ -1,0 +1,16 @@
+xlrd
+h5py
+keras
+librosa
+matplotlib
+numba
+protobuf
+pytest
+PyYAML
+scikit-learn
+scipy
+streamlit
+tensorboard
+tensorflow
+tqdm
+torch
