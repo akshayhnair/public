@@ -30,3 +30,5 @@ for lib in libraries:
         print(f"{lib} is installed ✅")
     except ImportError:
         print(f"{lib} is NOT installed ❌")
+python -c "import importlib; libs=['xlrd','h5py','keras','librosa','matplotlib','numba','protobuf','pytest','yaml','sklearn','scipy','streamlit','tensorboard','tensorflow','tqdm','torch']; [print(f'{lib} ✅' if importlib.util.find_spec(lib) else f'{lib} ❌') for lib in libs]"
+
